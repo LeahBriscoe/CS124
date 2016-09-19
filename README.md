@@ -1,6 +1,7 @@
-# CS124
+# GAMe KUP: Global Ancestry Mapping in Known and Unknown Populations
+(Final Project for CS 124: Computational Genetics)
+Contains R code and data files
 
-Contains R code for GAMe KUP: Global Ancestry Mapping in Known and Unknown Populations
 @File
 Calculate_F1_Score_easy.R to compare answer file to output file with individuals assigned to popualtions
 Calculate_F1_Score_hard.R to convert answer file to individuals assignments that match the output file
