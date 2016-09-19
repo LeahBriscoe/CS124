@@ -1,5 +1,6 @@
 # GAMe KUP: Global Ancestry Mapping in Known and Unknown Populations
-(Final Project for CS 124: Computational Genetics)
+Final Project for CS 124: Computational Genetics
+
 Contains R code and data files
 
 ## Files
@@ -37,4 +38,5 @@ Progress: 50% Progress
 
 Testing accuracy measure: F1 score. 
 100% Complete
+
 [Finish]
