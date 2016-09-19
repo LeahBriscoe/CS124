@@ -2,25 +2,39 @@
 (Final Project for CS 124: Computational Genetics)
 Contains R code and data files
 
-@File
-Calculate_F1_Score_easy.R to compare answer file to output file with individuals assigned to popualtions
-Calculate_F1_Score_hard.R to convert answer file to individuals assignments that match the output file
+## Files
+### PopulationAssignment_LevelEasy.R 
+Takes sampled individuals from the known populations and all individuals in known populations to create a correlation matrix. Populations are selected based on correlations that exceed the cutoff.  
 
-PopulationAssignment_LevelEasy.R uses sampled individuals for correlation
-PopulationAssignment_LevelEasy(Improved).R uses haplotype matrix for correlation
+### PopulationAssignment_LevelEasy(Improved).R 
+Similar method to the easy script, but uses only haplotypes for correlation matrix.
 
-PopulationAssignment_LevelHard.R uses kmeans only
-PopulationAssignment_LevelHard(Improved).R uses PCA and kmeans together
+### PopulationAssignment_LevelHard.R 
+Clusters populations by k-means clustering. 
 
+### PopulationAssignment_LevelHard(Improved).R 
+Principal components analysis is used to determine optimal number of clusters, then k-means is used for the clustering step. 
 
-Week 6: Search HapMap and 1000 Genomes Project for examples of populations that have been studied 
-Grade: 5% Progress
+### Calculate_F1_Score_easy.R 
+Script calculates F1 score by comparing answer file to output file from PopulationAssignment_LevelEasy.R. The output file displays a list of individuals assigned to numbers that indicate known populations. 
 
+### Calculate_F1_Score_hard.R 
+Because we are clustering the individuals into unknown populations, we cannot compare our solution to the actual solution without identifying which populations in our solution correspond to the populations in the actual solution. Converts answer file to individuals assignments that match the output file from PopulationAssignment_LevelHard.R.
 
-Week 7: Practice working with genotype data and downloading data into R
-Grade: 10% Progress
+## Progress Timeline:
+[Start] 
+Search HapMap and 1000 Genomes Project for examples of populations that have been studied 
+Progress: 5% Completion
 
-Week 8: Try simple haplotype phasing 
-Grade: 15% Progress
+Practice working with genotype data efficient downloading of data into R
+Progress: 10% Completion
 
-Week 9 and 10: Use correlation matrix to make predictions on easy data
+Try simple haplotype phasing 
+Progress: 15% Progress
+
+Use correlation matrix to make predictions on easy data
+Progress: 50% Progress 
+
+Testing accuracy measure: F1 score. 
+100% Complete
+[Finish]
